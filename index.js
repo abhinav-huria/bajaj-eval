@@ -40,8 +40,8 @@ app.post("/bfhl", (req, res) => {
   );
 });
 
-app.listen(3001, () => {
-  console.log("BE started at port 3001");
-});
+// app.listen(80, () => {
+//   console.log("Server is running on port 80");
+// });
 module.exports.handler = serverless(app);
 //module.exports = app;
