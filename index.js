@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/bfhl", (req, res) => {
-  res.send("API is running");
+  res.send("Abhinav Huria, Roll no. 1910990331");
 });
 app.post("/bfhl", (req, res) => {
   let is_success = true;
