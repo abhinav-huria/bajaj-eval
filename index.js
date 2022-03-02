@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-
+const serverless = require('serverless-http');
 app.use(express.json());
 
 function isNumeric(value) {
