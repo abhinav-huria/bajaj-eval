@@ -39,8 +39,9 @@ app.post("/bfhl", (req, res) => {
   );
 });
 
-app.listen(80, () => {
-  console.log("Server is running on port 80");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.warn(`App listening on http://localhost:${PORT}`);
 });
 
 module.exports = app;
