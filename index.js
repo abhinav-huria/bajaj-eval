@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const serverless = require('serverless-http');
 app.use(express.json());
 
 function isNumeric(value) {
@@ -40,8 +39,8 @@ app.post("/bfhl", (req, res) => {
   );
 });
 
-// app.listen(80, () => {
-//   console.log("Server is running on port 80");
-// });
-module.exports.handler = serverless(app);
-//module.exports = app;
+app.listen(80, () => {
+  console.log("Server is running on port 80");
+});
+
+module.exports = app;
