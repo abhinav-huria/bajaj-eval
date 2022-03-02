@@ -43,5 +43,5 @@ app.post("/bfhl", (req, res) => {
 app.listen(3001, () => {
   console.log("BE started at port 3001");
 });
-
-module.exports = app;
+module.exports.handler = serverless(app);
+//module.exports = app;
